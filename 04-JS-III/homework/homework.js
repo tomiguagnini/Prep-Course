@@ -47,7 +47,13 @@ function dePalabrasAFrase(palabras) {
   // con espacios entre cada palabra
   // Ejemplo: ['Hello', 'world!'] -> 'Hello world!'
   // Tu código:
+  let str = ''
+  palabras.map((e,i)=>{
+    str= str + e + ' '
+  })
+  return str.trim()
 }
+console.log(dePalabrasAFrase(['hola', 'mundo']))
 
 
 function arrayContiene(array, elemento) {
